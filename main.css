@@ -12,7 +12,7 @@
 body {
     background-color: #04000b;
     color: #fff !important;
-    font-family: 'firaSans', sans-serif;
+    font-family: 'spaceGrotesk', sans-serif;
     padding: 0;
     margin: 0;
 
@@ -29,9 +29,12 @@ header {
     height: 7vw;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
     font-size: 3.5rem;
-    position: fixed;
+    /* position: fixed; */
     top: 0;
+    font-family: 'firaSans', sans-serif;
 }
+
+
 
 ul.navbar {
     list-style-type: none;
@@ -51,7 +54,7 @@ ul.navbar li a {
     text-decoration: none;
 }
 
-@keyframes hover-color {
+@keyframes hoverColor {
     from {
       color: #fff;
     }
@@ -63,8 +66,9 @@ ul.navbar li a {
 
 ul.navbar li a:hover {
     animation-duration: 300ms;
-    animation-name: hover-color;
+    animation-name: hoverColor;
     animation-fill-mode: both;
+    cursor: pointer;
 }
 
   ul.navbar li {
@@ -77,6 +81,62 @@ h1.title {
     font-size: 2rem;
 }
 
-div.card {
-  
+div.cardCollection {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: left;
+    gap: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    white-space: nowrap;
+    display: inline-grid;
+}
+
+div.cardCollection div.card {
+    width: 10rem;
+    height: 10rem;
+    background-color: #16161d;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    font-size: 3rem;
+    width: fit-content;
+    min-width: 20vw;
+    height: 10vw;
+    padding: 1rem;
+    margin: 1rem;
+    grid-row: 1;
+
+}
+
+div.cardCollection div.card:hover {
+    animation-duration: 300ms;
+    animation-name: cardHover;
+    animation-fill-mode: both;
+    cursor: pointer;
+}
+
+div hr {
+    width: 97.5%;
+    height: 0.1vw;
+    background-color: #16161d;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+    margin: 0;
+    margin-top: 1vw;
+    margin-bottom: .5vw;
+    margin-left: 1.25%;
+    border: none;
+}
+
+@keyframes  cardHover {
+    from {
+      background-color: #16161d;
+    }
+    to {
+      background-color: #0145cc;
+      scale: 120%;
+    }
 }
