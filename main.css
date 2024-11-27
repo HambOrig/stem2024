@@ -1,0 +1,82 @@
+/* Defines, prerequisites, such as fonts */
+@font-face {
+    font-family: 'spaceGrotesk';
+    src: url(./media/fonts/space/SpaceGrotesk-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: 'firaSans';
+    src: url(./media/fonts/fira/FiraSans-Regular.ttf);
+}
+
+body {
+    background-color: #04000b;
+    color: #fff !important;
+    font-family: 'firaSans', sans-serif;
+    padding: 0;
+    margin: 0;
+
+}
+
+header {
+    background-color: #16161d;
+    box-sizing: border-box;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    position:relative;
+    display: flex;
+    height: 7vw;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+    font-size: 3.5rem;
+    position: fixed;
+    top: 0;
+}
+
+ul.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #16161d;
+    position: relative;
+    right: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+ul.navbar li a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+}
+
+@keyframes hover-color {
+    from {
+      color: #fff;
+    }
+    to {
+      color: #0145cc;
+      scale: 120%;
+    }
+  }
+
+ul.navbar li a:hover {
+    animation-duration: 300ms;
+    animation-name: hover-color;
+    animation-fill-mode: both;
+}
+
+  ul.navbar li {
+    white-space: nowrap;
+    margin: 2vw;
+    margin-top: 1.5vw;
+}
+
+h1.title {
+    font-size: 2rem;
+}
+
+div.card {
+  
+}
